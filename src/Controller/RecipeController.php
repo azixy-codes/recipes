@@ -20,7 +20,8 @@ class RecipeController extends AbstractController
     public function show(Request $request, string $slug, int $id): Response
     {
         return $this->render('recipe/show.html.twig', [
-            'controller_name' => 'RecipeController',
+            'slug' => $slug,
+            'id' => $id
         ]);
     }
 }
