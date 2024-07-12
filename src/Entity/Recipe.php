@@ -21,7 +21,7 @@ class Recipe
 
     #[ORM\Column(length: 255)]
     #[Assert\Length(min: 5)]
-    #[BanWord()]
+    #[BanWord]
     private string $title = '';
 
     #[ORM\Column(length: 255)]
@@ -40,8 +40,8 @@ class Recipe
     private ?\DateTimeImmutable $updated_at = null;
 
     #[ORM\Column(nullable: true)]
-    #[Assert\NotBlank()]
-    #[Assert\Positive()]
+    #[Assert\NotBlank]
+    #[Assert\Positive]
     #[Assert\LessThan(1440)]
     private ?int $duration = null;
 

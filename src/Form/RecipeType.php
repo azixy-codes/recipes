@@ -3,14 +3,12 @@
 namespace App\Form;
 
 use App\Entity\Recipe;
-use Doctrine\DBAL\Types\TextType;
-use PHPUnit\Framework\Constraint\IsInstanceOf;
-use Symfony\Component\BrowserKit\Request;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Event\PostSubmitEvent;
 use Symfony\Component\Form\Event\PreSubmitEvent;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
